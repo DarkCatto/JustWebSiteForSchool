@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Figma</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #f0f0f0; /* Light gray background */
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.center-flex {
+			flex: 1;
+		}
+		iframe {
+			width: 100%;
+			height: 100vh;
+			border: 1px solid rgba(0, 0, 0, 0.1);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="center-flex">
+			<iframe id="figma-iframe" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FbhlLPXmFRBa3ZaEoX8XElS%2F%25D0%25A0%25D0%25BE%25D0%25B1%25D0%25BE%25D1%2584%25D0%25BE%25D1%2582%25D0%25B5%25D1%2585%25D0%25BD%25D0%25B8%25D0%25BA%25D0%25B0-%25D0%2590%25D0%25BD%25D0%25B0%25D0%25B4%25D1%258B%25D1%2580%25D1%258C%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D52-2646%26t%3DSovyS7uA2HlJ0NDJ-1%26scaling%3Dcontain%26starting-point-node-id%3D52%253A2646%26hotspot-hints%3D0%26mode%3Ddesign" allowfullscreen></iframe>
+		</div>
+	</div>
+	<script>
+		// Request fullscreen mode
+		document.getElementById('figma-iframe').addEventListener('click', function() {
+			this.requestFullscreen();
+		});
+	</script>
+</body>
+</html>
